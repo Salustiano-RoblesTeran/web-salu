@@ -1,0 +1,86 @@
+/* Estilos básicos para dispositivos móviles */
+header {
+    background-color: #f8f9fa;
+    padding: 10px;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+h1 {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+.menu-icon {
+    font-size: 2em;
+    cursor: pointer;
+    display: block;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    display: none; /* Ocultar el menú por defecto */
+    flex-direction: column;
+    align-items: center;
+}
+
+li {
+    margin: 10px 0;
+}
+
+a {
+    text-decoration: none;
+    color: #007bff;
+    font-size: 1em;
+}
+
+a:hover {
+    color: #0056b3;
+}
+
+#menu-toggle:checked + .menu-icon + .nav-links {
+    display: flex; /* Mostrar el menú cuando el checkbox está marcado */
+}
+
+/* Estilos para dispositivos más grandes */
+@media (min-width: 768px) {
+    nav {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .menu-icon {
+        display: none;
+    }
+
+    ul {
+        display: flex; /* Mostrar el menú */
+        flex-direction: row;
+        width: auto;
+    }
+
+    li {
+        margin: 0 10px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    a {
+        font-size: 1.2em;
+    }
+}
