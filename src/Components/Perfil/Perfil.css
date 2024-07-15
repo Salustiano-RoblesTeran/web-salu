@@ -3,6 +3,7 @@
 #profile {
     display: flex;
     justify-content: center;
+    margin: 15px;
     gap: 5rem;
     height: 80vh;
   }
@@ -16,25 +17,24 @@
   
   .section__text {
     align-self: center;
-    text-align: center;
+    text-align: start;
+
   }
   
   .section__text p {
-    font-weight: 600;
+    font-weight: 500;
   }
   
   .section__text__p1 {
-    text-align: center;
   }
   
   .section__text__p2 {
-    font-size: 1.75rem;
+    font-size: 1rem;
     margin-bottom: 1rem;
   }
   
   .title {
-    font-size: 3rem;
-    text-align: center;
+    font-size: 1.75rem;
   }
   
   #socials-container {
